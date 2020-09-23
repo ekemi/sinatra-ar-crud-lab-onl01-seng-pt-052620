@@ -28,4 +28,16 @@ class ApplicationController < Sinatra::Base
 
     redirect '/show'
   end
+
+  get '/articles/:id/edit' do
+
+  end
+
+  path '/articles/:id' do
+  end
+
+  delete '/article/:id' do
+
+
+  end
 end
