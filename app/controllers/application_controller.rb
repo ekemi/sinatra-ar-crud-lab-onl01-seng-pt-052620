@@ -27,6 +27,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/articles' do
+    attrs = params
+    @article=Article.create(attrs)
 
     redirect '/show'
   end
