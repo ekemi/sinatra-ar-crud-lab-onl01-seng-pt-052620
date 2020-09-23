@@ -25,5 +25,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/articles' do
+
+    redirect '/show'
   end
 end
