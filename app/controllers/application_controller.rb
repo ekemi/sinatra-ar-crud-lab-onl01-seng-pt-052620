@@ -44,7 +44,7 @@ class ApplicationController < Sinatra::Base
     @article =Aritcle.find_by(id: id)
     attrs = params[:article]
     @aricle.update(attrs)
-    redirect to "/articles/#{@article.id}" 
+    redirect to "/articles/#{@article.id}"
   end
 
   delete '/article/:id' do
