@@ -30,7 +30,7 @@ class ApplicationController < Sinatra::Base
     attrs = params
     @article=Article.create(attrs)
 
-    erb :show
+    redirect '/show'
   end
 
   get '/articles/:id/edit' do
