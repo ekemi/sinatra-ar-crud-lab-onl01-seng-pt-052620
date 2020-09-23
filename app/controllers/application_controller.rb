@@ -33,7 +33,7 @@ class ApplicationController < Sinatra::Base
 
   end
 
-  path '/articles/:id' do
+  patch '/articles/:id' do
   end
 
   delete '/article/:id' do
